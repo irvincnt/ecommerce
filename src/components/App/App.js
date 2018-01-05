@@ -27,7 +27,27 @@ class App extends Component {
             marca: 'Sony',
             shipping: 'Envío gratis',
             status: 6,
-          }
+          },
+          {
+          id: 3,
+          name: 'Fujifilm X-t10 40.0 Mp',
+          picture: 'https://http2.mlstatic.com/camara-D_Q_NP_997939-MLM25733136676_072017-X.webp',
+          price: 18999,
+          datails: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
+          marca: 'Fujifilm',
+          shipping: 'Envío gratis',
+          status: 2,
+        },
+        {
+          id: 4,
+          name: 'Reflex Canon Eos 30 ',
+          picture: 'https://http2.mlstatic.com/camara-D_Q_NP_743505-MLM25028787002_082016-X.webp',
+          price: 1000,
+          datails: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
+          marca: 'Canon',
+          shipping: 'Envío gratis',
+          status: 6,
+        }
         ]
       }
     }
