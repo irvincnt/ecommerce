@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
-import './App.css';
+import { Container, Grid, Header } from 'semantic-ui-react'
+import ProductList from '../ProductList'
+import style from './App.css'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Container className={style.root}>
+        <Header as='h3' block>
+          E-commerce
+        </Header>
+        <Grid>
+          <Grid.Column width={10}>
+            <ProductList/>
+          </Grid.Column>
+          <Grid.Column width={6}>
+            CartList
+          </Grid.Column>
+        </Grid>
+      </Container>
+
     );
   }
 }
