@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Product from './Product'
+import { Segment } from 'semantic-ui-react'
+import Product from '../Product'
 
 class ProductList extends Component {
   constructor(props) {
@@ -8,18 +9,24 @@ class ProductList extends Component {
 
     render() {
       return(
-        <Product
-          key={this.props.id}
-          name={this.props.name}
-          picture={this.props.picture}
-          price={this.props.price}
-          datails={this.props.datails}
-          marca={this.props.marca}
-          shipping={this.props.shipping}
-          status={this.props.status}
-        />
-      )
-    }
+      <Segment>
+        {this.props.products.map(p => {
+          return (
+            <Product
+              key={p.id}
+              name={p.name}
+              picture={p.picture}
+              price={p.price}
+              datails={p.datails}
+              marca={p.marca}
+              shipping={p.shipping}
+              status={p.status}
+            />
+          )
+        })}
+      </Segment>
+    )
+  }
 }
 
 export default ProductList
