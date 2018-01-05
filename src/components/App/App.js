@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Grid, Header } from 'semantic-ui-react'
 import ProductList from '../ProductList'
+import CartList from '../CartList'
 import style from './App.css'
 
 class App extends Component {
@@ -65,7 +66,7 @@ class App extends Component {
             />
           </Grid.Column>
           <Grid.Column width={6}>
-            CartList
+            <CartList/>
           </Grid.Column>
         </Grid>
       </Container>
