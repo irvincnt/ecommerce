@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Item, Label, Divider } from 'semantic-ui-react'
+import Format from '../numberFormat'
 
 class Product extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class Product extends Component {
               <Item.Header as='a'>{this.props.name}</Item.Header>
               <Item.Meta>
                 <span className='cinema'>
-                  <p>{this.props.price}</p>
+                  <Format number={this.props.price}/>
                 </span>
               </Item.Meta>
               <Item.Description>{this.props.datails}</Item.Description>
